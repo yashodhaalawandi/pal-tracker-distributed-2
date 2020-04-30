@@ -2,11 +2,19 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
+<<<<<<< HEAD
   - route: allocations-pal-yashoda-pratyus.cfapps.io
   memory: 1G
   instances: 1
   env:
     REGISTRATION_SERVER_ENDPOINT: http://registration-pal-yashoda-pratyus.cfapps.io
+=======
+  - route: allocations-pal-amer.cfapps.io
+  memory: 1G
+  instances: 1
+  env:
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-amer.cfapps.io
+>>>>>>> 10e37ae92ec0101fc083e6ffc11f3ed7aad52d6f
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-allocations-database
