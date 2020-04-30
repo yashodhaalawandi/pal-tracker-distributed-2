@@ -2,11 +2,8 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-<<<<<<< HEAD
   - route: registration-pal-yashoda-pratyus.cfapps.io
-=======
-  - route: registration-pal-amer.cfapps.io
->>>>>>> 10e37ae92ec0101fc083e6ffc11f3ed7aad52d6f
+
   memory: 1G
   instances: 1
   env:
