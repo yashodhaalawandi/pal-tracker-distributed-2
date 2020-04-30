@@ -20,7 +20,7 @@ jobs:
           mysql -uroot -proot < databases/create_databases.sql
           ./gradlew testMigrate
       - name: Build with Gradle
-        run: ./gradlew clean build
+        run: ./gradlew clean assemble
       - name: Publish allocations artifact
         uses: actions/upload-artifact@v1
         with:
